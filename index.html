@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Chekoti Praneeth Sai - Portfolio</title>
+    
+    <!-- Favicon - PS Logo -->
+    <link rel="icon" type="image/jpeg" href="pslogo.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="pslogo.jpeg">
+    <link rel="apple-touch-icon" href="pslogo.jpeg">
+    <!-- Optional: Add proper PNG favicons later for better quality -->
+    <!--
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+    -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="MOBILE_FIXES.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-progress-indicator">
+            <div class="loading-progress-squares">
+                <div class="loading-progress-square loading-progress-square-1"></div>
+                <div class="loading-progress-square loading-progress-square-2"></div>
+                <div class="loading-progress-square loading-progress-square-3"></div>
+            </div>
+            <span class="loading-progress-percentage" id="loadingProgressPercentage">0%</span>
+            <p class="loading-caption">Welcome to my Portfolio.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-square">
+                    <span class="logo-text">PS</span>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-list" id="navList">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About me</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact me</a></li>
+                </ul>
+                <div class="nav-eyes">
+                    <div class="eye" id="eye1">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye" id="eye2">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content with Scrolling Sections -->
+        <main class="main-scroll">
+            <!-- Home Section -->
+            <section id="home" class="section">
+                <canvas id="homeParticles" class="particles-canvas" aria-hidden="true"></canvas>
+                <div class="inline-media-component-container welcome-video with-media-ui-button hide-ui media-unloaded fallback">
+                    <div class="video-wrapper media-unloaded" data-video-id="welcome-video" tabindex="-1">
+                        <video id="welcome-video" aria-label="Welcome video" preload="none" role="img" muted="" playsinline="" class="play-initiated" aria-hidden="true"></video>
+                        <picture id="overview-welcome-hero" class="overview-welcome-hero fallback-frame loaded" data-lazy="" data-picture-loaded="">
+                            <img src="" alt="Welcome" class="welcome-fallback-img">
+                        </picture>
+                    </div>
+                </div>
+                <div class="home-intro-top">Hey, I am</div>
+                <h1 class="name">Cheekoti Praneeth Sai</h1>
+                <div class="home-role">Full Stack Developer &amp; Machine Learning Engineer</div>
+
+                <!-- Home Social Links -->
+                <div class="home-social-links">
+                    <a href="https://www.linkedin.com/in/praneethsai4596/" target="_blank" rel="noopener" class="home-social-link">
+                        <svg class="home-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/gitpr4596" target="_blank" rel="noopener" class="home-social-link">
+                        <svg class="home-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+                
+                <!-- Footer - Progress indicator visible on all sections -->
+                <footer class="footer">
+                    <div class="footer-left">
+                        <span class="feed-text">Feed ↓</span>
+                        <div class="progress-indicator">
+                            <div class="progress-squares">
+                                <div class="progress-square progress-square-1"></div>
+                                <div class="progress-square progress-square-2"></div>
+                                <div class="progress-square progress-square-3"></div>
+                            </div>
+                            <span class="progress-percentage" id="progressPercentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <span class="portfolio-text">Portfolio</span>
+                    </div>
+                </footer>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="section-title">About me</h2>
+                <div class="about-box">
+                    <div class="about-card" id="aboutCard">
+                        <p class="about-me-text">I am an ambitious and skilled Electronics and Computer Engineering (B.Tech) graduate with a passion for transforming complex problems into efficient, scalable software solutions. Proficient in core languages like C++, Python, and Java, I bring practical experience in both full-stack development and cutting-edge Machine Learning/Deep Learning (ML/DL) projects. I am currently expanding my skills in UI/UX design and leveraging tools like Figma, Canva, and Adobe Photoshop. I am eager to apply my technical depth and software integration expertise to build innovative applications and contribute to a company's technological advancements.</p>
+                    </div>
+                </div>
+                <img class="about-photo-right" src="profilepic.jpeg" alt="Profile photo" />
+                <div class="about-experience">
+                    <div class="experience-label">Currently Working at</div>
+                    <div class="experience-row">
+                        <div class="experience-logo-container">
+                            <img src="logo.jpeg" alt="SSEV SOFTSOLS Logo" class="experience-logo" onerror="this.style.display='none'; console.error('Logo image failed to load');">
+                        </div>
+                        <div class="experience-company">SSEV SOFTSOLS</div>
+                        <div class="experience-extra">
+                            <span class="experience-extra-item">21 years old</span>
+                            <span class="experience-extra-item">4+ Projects</span>
+                        </div>
+                    </div>
+                    <div class="experience-role">SOFTWARE INTERN</div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <!-- Mahindra University -->
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="institution">Mahindra University</h3>
+                            <span class="degree">B.Tech Electronics and Computer Engineering</span>
+                        </div>
+                        <div class="education-details">
+                            <div class="gpa">GPA: 6.5</div>
+                            <div class="duration">Sep 2021 - Aug 2025</div>
+                            <div class="location">Hyderabad, India</div>
+                        </div>
+                    </div>
+
+                    <!-- Sri Chaitanya Junior College -->
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="institution">Sri Chaitanya Junior College</h3>
+                            <span class="degree">Intermediate MPC</span>
+                        </div>
+                        <div class="education-details">
+                            <div class="percentage">Percentage: 92%</div>
+                            <div class="duration">Jun 2019 - May 2021</div>
+                            <div class="location">Hyderabad, India</div>
+                        </div>
+                    </div>
+
+                    <!-- Dwaraka High School -->
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3 class="institution">Dwaraka High School</h3>
+                            <span class="degree">10th Grade Secondary Education</span>
+                        </div>
+                        <div class="education-details">
+                            <div class="gpa">GPA: 9.3</div>
+                            <div class="duration">Jun 2018 - Apr 2019</div>
+                            <div class="location">Hyderabad, India</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <video preload="auto" playsinline="" autoplay="" loop="" muted="" class="skills-bg-video">
+                    <source src="video/footer.mp4" type="video/mp4">
+                </video>
+                <h2 class="section-title">Skills</h2>
+                <canvas id="skillsBall" class="skills-ball-canvas" aria-hidden="true"></canvas>
+                <canvas id="skillsParticlesLeft" class="skills-particles-canvas skills-particles-left" aria-hidden="true"></canvas>
+                <canvas id="skillsParticlesRight" class="skills-particles-canvas skills-particles-right" aria-hidden="true"></canvas>
+                <div class="skills-content">
+                    <div class="skills-boxes">
+                        <!-- Technical Skills Box -->
+                        <div class="skill-box">
+                            <div class="skill-box-inner">
+                                <div class="skill-accent"></div>
+                                <h3 class="skill-box-title">Technical Skills</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Python</span>
+                                    <span class="skill-item">Java</span>
+                                    <span class="skill-item">HTML</span>
+                                    <span class="skill-item">CSS</span>
+                                    <span class="skill-item">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Machine Learning Box -->
+                        <div class="skill-box">
+                            <div class="skill-box-inner">
+                                <div class="skill-accent"></div>
+                                <h3 class="skill-box-title">Machine Learning</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Neural Networks</span>
+                                    <span class="skill-item">Decision Trees</span>
+                                    <span class="skill-item">Random Forests</span>
+                                    <span class="skill-item">Support Vector Machine (SVM)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-boxes skills-boxes-right">
+                        <!-- Data Analysis & Visualization Box -->
+                        <div class="skill-box">
+                            <div class="skill-box-inner">
+                                <div class="skill-accent"></div>
+                                <h3 class="skill-box-title">Data Analysis & Visualization</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Tableau</span>
+                                    <span class="skill-item">Dashboard Creation</span>
+                                    <span class="skill-item">Power BI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Graphic Design & Design Tools Box -->
+                        <div class="skill-box">
+                            <div class="skill-box-inner">
+                                <div class="skill-accent"></div>
+                                <h3 class="skill-box-title">Graphic Design & Design Tools</h3>
+                                <div class="skill-items">
+                                    <span class="skill-item">Adobe Photoshop</span>
+                                    <span class="skill-item">Canva</span>
+                                    <span class="skill-item">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="section certifications-section">
+                <div class="certifications-container">
+                    <div class="certifications-left">
+                        <h1 class="certifications-title">CERTIFICATIONS</h1>
+                        <div class="certifications-divider"></div>
+                    </div>
+                    <div class="certifications-right">
+                        <div class="certifications-content">
+                            <!-- Certificate 1 -->
+                            <div class="certification-card">
+                                <div class="certification-card-inner">
+                                    <div class="certification-accent"></div>
+                                    <div class="certification-main-content">
+                                        <h3 class="certification-title">Certificate of Achievement - Power BI Masterclass</h3>
+                                        <p class="certification-issuer">Full Stack Academy & Analytics club</p>
+                                        <p class="certification-desc">Built interactive Power BI dashboards to track user sentiment trends and model accuracy, identifying key performance drivers.</p>
+                                    </div>
+                                    <div class="certification-timeline">Feb 2025</div>
+                                </div>
+                            </div>
+
+                            <!-- Certificate 2 -->
+                            <div class="certification-card">
+                                <div class="certification-card-inner">
+                                    <div class="certification-accent"></div>
+                                    <div class="certification-main-content">
+                                        <h3 class="certification-title">Certificate of Completion - Data Analytics Job Simulation</h3>
+                                        <p class="certification-issuer">Deloitte, issued by Forage</p>
+                                        <p class="certification-desc">Completed comprehensive data analytics job simulation through Deloitte's Forage program.</p>
+                                    </div>
+                                    <div class="certification-timeline">Mar 2025</div>
+                                </div>
+                            </div>
+
+                            <!-- Certificate 3 -->
+                            <div class="certification-card">
+                                <div class="certification-card-inner">
+                                    <div class="certification-accent"></div>
+                                    <div class="certification-main-content">
+                                        <h3 class="certification-title">Certification of Project Completion - Java Full Stack Development Project</h3>
+                                        <p class="certification-issuer">Issued by Brainovision Pvt.Ltd</p>
+                                        <p class="certification-desc">Engineered a comprehensive Hospital Management System integrating JDBC, JSP, and SQL to enhance data management processes; improved response times for patient records retrieval by 30% through optimized backend operations.</p>
+                                    </div>
+                                    <div class="certification-timeline">Jul 2024 - Aug 2024</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">Projects</h2>
+                <canvas id="projectsParticlesLeft" class="projects-particles-canvas projects-particles-left" aria-hidden="true"></canvas>
+                <canvas id="projectsParticlesRight" class="projects-particles-canvas projects-particles-right" aria-hidden="true"></canvas>
+                <div class="projects-grid">
+                    <!-- ERP SYSTEM -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">ERP System</h3>
+                            <p class="project-desc">Full‑stack ERP with Python/Flask REST APIs and a dynamic HTML/CSS/JS frontend integrating key business functions.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">REST</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ITMS -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">ITMS – Intelligent Traffic Management</h3>
+                            <p class="project-desc">Automated traffic‑violation detection with YOLO and a full‑stack Flask backend plus real‑time analytics dashboard.</p>
+                            <div class="project-tags">
+                                <span class="tag">YOLO</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">Dashboard</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sarcasm Detection -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">Sarcasm Detection (DL/ML)</h3>
+                            <p class="project-desc">Text sarcasm classification with TF‑IDF/Word2Vec/GloVe features; ML (RF/SVM/LogReg) and DL (RNN/LSTM/GRU, Transformers) up to 91% accuracy.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Transformers</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sentiment Classification -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">Sentiment Classification (ML/DL)</h3>
+                            <p class="project-desc">Binary sentiment analysis using TF‑IDF & Word2Vec features trained on SVM, RNN, LSTM, GRU and Logistic Regression; best accuracy 85.38% with SVM + TF‑IDF.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">TF‑IDF</span>
+                                <span class="tag">Word2Vec</span>
+                                <span class="tag">SVM</span>
+                                <span class="tag">RNN</span>
+                                <span class="tag">LSTM</span>
+                                <span class="tag">GRU</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- NFC Payment -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">NFC Payment</h3>
+                            <p class="project-desc">Engineered a full-stack, cross-platform NFC Point-of-Sale (POS) system (Flask/SQLite) with distinct Merchant and Customer web dashboards. It integrates a USB NFC Reader (ACR1252U) for secure transactions, delivering real-time processing, NFC tag management, and granular revenue analytics.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">pyscard</span>
+                                <span class="tag">smartcard</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">NFC</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project Quick View Modal -->
+                <div class="project-modal" id="projectModal" aria-hidden="true">
+                    <div class="project-modal-backdrop" data-close></div>
+                    <div class="project-modal-content" role="dialog" aria-modal="true">
+                        <button class="project-modal-close" aria-label="Close" data-close>&times;</button>
+                        <h3 class="project-modal-title"></h3>
+                        <p class="project-modal-desc"></p>
+                        <div class="project-modal-tags"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="contact-container">
+                    <!-- Top Left - Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="contact-icon call-icon" aria-label="Call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13.81.25 1.61.45 2.41a2 2 0 0 1-.45 1.91L8.1 10.1a16 16 0 0 0 6.4 6.4l1.06-1.06a2 2 0 0 1 1.91-.45c.8.2 1.6.32 2.41.45A2 2 0 0 1 22 16.92z"></path></svg></span>
+                            <span class="contact-text">+91 9182020177</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="contact-icon gmail-icon" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></span>
+                            <span class="email">praneethsai4596@gmail.com</span>
+                        </div>
+                        <div class="location">Permanently located in Hyderabad, Telangana</div>
+                    </div>
+                    
+                    <!-- Get in Touch Section -->
+                    <div class="get-in-touch">
+                        <h2 class="get-in-touch-title">Get in touch</h2>
+                        <p class="get-in-touch-text">Got an interesting project or a new challenge? Lets connect.</p>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="form-input" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" class="form-input" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-input" required>
+                            <textarea id="message" name="message" placeholder="Your Message" class="form-textarea" rows="6" required></textarea>
+                            <button type="submit" class="send-button" id="submitBtn">
+                                Send Message
+                                <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Digital Clock -->
+                    <div class="contact-clock" id="contactClock"></div>
+                    
+                    <!-- Website Credit -->
+                    <div class="website-credit">Website by PraneethSai</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle - Phone Compatible
+        (function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navList = document.getElementById('navList');
+            
+            if (mobileMenuToggle && navList) {
+                // Use touchstart for better mobile compatibility
+                const toggleMenu = function(e) {
+                    if (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                    const isActive = navList.classList.contains('active');
+                    mobileMenuToggle.classList.toggle('active');
+                    navList.classList.toggle('active');
+                    
+                    if (!isActive) {
+                        document.body.style.overflow = 'hidden';
+                        document.body.style.position = 'fixed';
+                        document.body.style.width = '100%';
+                    } else {
+                        document.body.style.overflow = '';
+                        document.body.style.position = '';
+                        document.body.style.width = '';
+                    }
+                };
+                
+                mobileMenuToggle.addEventListener('touchstart', toggleMenu, { passive: false });
+                mobileMenuToggle.addEventListener('click', toggleMenu);
+                
+                // Close menu when clicking on a nav link
+                const navLinks = navList.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    const closeMenu = function() {
+                        mobileMenuToggle.classList.remove('active');
+                        navList.classList.remove('active');
+                        document.body.style.overflow = '';
+                        document.body.style.position = '';
+                        document.body.style.width = '';
+                    };
+                    link.addEventListener('touchstart', closeMenu, { passive: true });
+                    link.addEventListener('click', closeMenu);
+                });
+                
+                // Close menu when clicking outside (touch + click)
+                const closeOnOutside = function(e) {
+                    if (!navList.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                        if (navList.classList.contains('active')) {
+                            mobileMenuToggle.classList.remove('active');
+                            navList.classList.remove('active');
+                            document.body.style.overflow = '';
+                            document.body.style.position = '';
+                            document.body.style.width = '';
+                        }
+                    }
+                };
+                document.addEventListener('touchstart', closeOnOutside, { passive: true });
+                document.addEventListener('click', closeOnOutside);
+            }
+        })();
+        
+        // Ultra-fast smooth scrolling - instant response with minimal lag
+        function smoothScrollTo(target, offset = 100) {
+            const targetElement = typeof target === 'string' ? document.querySelector(target) : target;
+            if (!targetElement) return;
+            
+            const targetPosition = targetElement.offsetTop - offset;
+            const startPosition = window.pageYOffset;
+            const distance = Math.abs(targetPosition - startPosition);
+            
+            // Very short duration - max 250ms for smooth but instant feel
+            const duration = Math.min(250, distance * 0.15);
+            
+            // For very short distances, use instant scroll
+            if (distance < 100) {
+                window.scrollTo(0, targetPosition);
+                return;
+            }
+
+            let start = null;
+
+            // Lightweight easing for fastest response
+            function easeOutCubic(t) {
+                return 1 - Math.pow(1 - t, 3);
+            }
+
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const progress = Math.min(timeElapsed / duration, 1);
+                const ease = easeOutCubic(progress);
+                
+                window.scrollTo(0, startPosition + (targetPosition - startPosition) * ease);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animation);
+                }
+            }
+            requestAnimationFrame(animation);
+        }
+
+        // Navigation link clicks - instant response with zero lag
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (!target) return;
+                
+                const headerHeight = 100;
+                
+                // Immediate scroll - no delays
+                if (target.id === 'education') {
+                    smoothScrollTo(target, headerHeight + 10);
+                    // Check for full visibility after a very short delay (non-blocking)
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            const educationContent = target.querySelector('.education-content');
+                            if (educationContent) {
+                                const lastItem = educationContent.lastElementChild;
+                                if (lastItem) {
+                                    const lastItemRect = lastItem.getBoundingClientRect();
+                                    const viewportHeight = window.innerHeight;
+                                    if (lastItemRect.bottom > viewportHeight - 20) {
+                                        const neededScroll = window.pageYOffset + (lastItemRect.bottom - viewportHeight + 40);
+                                        window.scrollTo({
+                                            top: neededScroll,
+                                            behavior: 'smooth'
+                                        });
+                                    }
+                                }
+                            }
+                        }, 280);
+                    });
+                } else {
+                    // Instant scroll for Skills, Projects, About, Contact - zero delay
+                    smoothScrollTo(target, headerHeight);
+                }
+            }, { passive: false, capture: false });
+        });
+
+        // Smooth wheel scrolling enhancement
+        let isScrolling = false;
+        let scrollTimeout = null;
+        
+        window.addEventListener('wheel', function(e) {
+            if (!isScrolling) {
+                isScrolling = true;
+            }
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                isScrolling = false;
+            }, 150);
+        }, { passive: true });
+
+        // Update active navigation link and progress indicator on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const headerHeight = 100;
+            const scrollPosition = window.scrollY + headerHeight + 150; // Offset for better detection
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Update progress percentage
+            updateProgressIndicator();
+        }, { passive: true });
+        
+        // Progress Indicator - Calculate percentage based on scroll through all sections
+        function updateProgressIndicator() {
+            const progressPercentage = document.getElementById('progressPercentage');
+            const feedText = document.querySelector('.feed-text');
+            const portfolioText = document.querySelector('.portfolio-text');
+            if (!progressPercentage) return;
+            
+            const sections = document.querySelectorAll('section');
+            if (sections.length === 0) return;
+            
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Calculate total scrollable distance (from start to end of document)
+            const maxScroll = documentHeight - windowHeight;
+            const currentScroll = scrollTop;
+            
+            // Calculate progress percentage (0% at top, 100% when fully scrolled to bottom)
+            let progress = 0;
+            if (maxScroll > 0) {
+                progress = Math.min(100, Math.max(0, (currentScroll / maxScroll) * 100));
+            } else {
+                // If page is not scrollable, check if we're at the contact section
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    const contactRect = contactSection.getBoundingClientRect();
+                    if (contactRect.bottom <= windowHeight + 50) {
+                        progress = 100;
+                    }
+                }
+            }
+            
+            // Ensure 100% when at the very bottom
+            if (scrollTop + windowHeight >= documentHeight - 10) {
+                progress = 100;
+            }
+            
+            // Update percentage display
+            progressPercentage.textContent = Math.round(progress) + '%';
+            
+            // Light up squares sequentially based on progress (one at a time, passing light)
+            const square1 = document.querySelector('.progress-square-1');
+            const square2 = document.querySelector('.progress-square-2');
+            const square3 = document.querySelector('.progress-square-3');
+            
+            // Remove all lit classes first
+            if (square1) square1.classList.remove('lit');
+            if (square2) square2.classList.remove('lit');
+            if (square3) square3.classList.remove('lit');
+            
+            // Light up squares progressively (cumulative): 0-33% = square1, 33-66% = square1+2, 66-100% = all three
+            if (progress >= 0 && progress < 33) {
+                if (square1) square1.classList.add('lit');
+            } else if (progress >= 33 && progress < 66) {
+                if (square1) square1.classList.add('lit');
+                if (square2) square2.classList.add('lit');
+            } else if (progress >= 66) {
+                if (square1) square1.classList.add('lit');
+                if (square2) square2.classList.add('lit');
+                if (square3) square3.classList.add('lit');
+            }
+            
+            // Show/hide Feed and Portfolio text based on section
+            const headerHeight = 100;
+            const scrollPosition = scrollTop + headerHeight + 150;
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            // Show Feed and Portfolio only on home section
+            const footer = document.querySelector('.footer');
+            const progressIndicator = document.querySelector('.progress-indicator');
+            const contactContainer = document.querySelector('.contact-container');
+            
+            if (currentSection === 'home' || currentSection === '') {
+                if (feedText) feedText.style.display = 'block';
+                if (portfolioText) portfolioText.style.display = 'block';
+                if (footer) {
+                    footer.classList.add('footer-home');
+                    footer.style.display = 'flex';
+                }
+                if (progressIndicator) {
+                    progressIndicator.style.position = 'static';
+                    progressIndicator.style.bottom = 'auto';
+                    progressIndicator.style.left = 'auto';
+                    progressIndicator.style.transform = 'none';
+                }
+            } else if (currentSection === 'contact') {
+                // Position progress indicator inside contact-container when on contact section
+                if (feedText) feedText.style.display = 'none';
+                if (portfolioText) portfolioText.style.display = 'none';
+                if (footer) {
+                    footer.classList.remove('footer-home');
+                    footer.style.display = 'none'; // Hide footer on contact section
+                }
+                if (progressIndicator && contactContainer) {
+                    progressIndicator.style.position = 'absolute';
+                    progressIndicator.style.bottom = '2rem';
+                    progressIndicator.style.left = '3rem';
+                    progressIndicator.style.transform = 'none';
+                    progressIndicator.style.zIndex = '10';
+                    if (!contactContainer.contains(progressIndicator)) {
+                        contactContainer.appendChild(progressIndicator);
+                    }
+                }
+            } else {
+                if (feedText) feedText.style.display = 'none';
+                if (portfolioText) portfolioText.style.display = 'none';
+                if (footer) {
+                    footer.classList.remove('footer-home');
+                    footer.style.display = 'flex'; // Keep footer visible for progress indicator
+                }
+                if (progressIndicator && contactContainer && contactContainer.contains(progressIndicator)) {
+                    // Move progress indicator back to footer if it was in contact-container
+                    const footerLeft = footer.querySelector('.footer-left');
+                    if (footerLeft && !footerLeft.contains(progressIndicator)) {
+                        footerLeft.appendChild(progressIndicator);
+                    }
+                }
+                if (progressIndicator) {
+                    progressIndicator.style.position = 'static';
+                    progressIndicator.style.bottom = 'auto';
+                    progressIndicator.style.left = 'auto';
+                    progressIndicator.style.transform = 'none';
+                    progressIndicator.style.zIndex = 'auto';
+                }
+            }
+        }
+        
+        // Initialize progress on load
+        window.addEventListener('load', () => {
+            updateProgressIndicator();
+            // Initialize footer state
+            const footer = document.querySelector('.footer');
+            if (footer) {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const headerHeight = 100;
+                const scrollPosition = scrollTop + headerHeight + 150;
+                const sections = document.querySelectorAll('section');
+                let currentSection = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionBottom = sectionTop + section.offsetHeight;
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                if (currentSection === 'home' || currentSection === '') {
+                    footer.classList.add('footer-home');
+                } else {
+                    footer.classList.remove('footer-home');
+                }
+            }
+        });
+
+        // Interactive Eyes - Follow Cursor
+        (function() {
+            setTimeout(function() {
+                const eye1 = document.getElementById('eye1');
+                const eye2 = document.getElementById('eye2');
+                
+                if (!eye1 || !eye2) {
+                    console.log('Eyes not found');
+                    return;
+                }
+                
+                const pupil1 = eye1.querySelector('.pupil');
+                const pupil2 = eye2.querySelector('.pupil');
+                
+                if (!pupil1 || !pupil2) {
+                    console.log('Pupils not found');
+                    return;
+                }
+
+                function updateEyePosition(eye, pupil, mouseX, mouseY) {
+                    const rect = eye.getBoundingClientRect();
+                    const eyeCenterX = rect.left + rect.width / 2;
+                    const eyeCenterY = rect.top + rect.height / 2;
+                    
+                    const deltaX = mouseX - eyeCenterX;
+                    const deltaY = mouseY - eyeCenterY;
+                    
+                    const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+                    const maxDistance = 3.8;
+                    
+                    let moveX, moveY;
+                    
+                    if (distance > maxDistance) {
+                        const ratio = maxDistance / distance;
+                        moveX = deltaX * ratio;
+                        moveY = deltaY * ratio;
+                    } else {
+                        moveX = deltaX;
+                        moveY = deltaY;
+                    }
+                    
+                    pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                }
+
+                document.addEventListener('mousemove', function(e) {
+                    updateEyePosition(eye1, pupil1, e.clientX, e.clientY);
+                    updateEyePosition(eye2, pupil2, e.clientX, e.clientY);
+                });
+
+                document.addEventListener('mouseleave', function() {
+                    pupil1.style.transform = 'translate(0, 0)';
+                    pupil2.style.transform = 'translate(0, 0)';
+                });
+                
+                console.log('Eyes initialized successfully');
+            }, 100);
+        })();
+
+        // Contact form submission handler - EmailJS integration
+        (function() {
+            // Initialize EmailJS
+            emailjs.init("12HsxfkoCkVxkzlOV");
+            
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Disable submit button during sending
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    
+                    // Get form data - ensure all fields have values
+                    const nameValue = document.getElementById('name').value.trim();
+                    const emailValue = document.getElementById('email').value.trim();
+                    const subjectValue = document.getElementById('subject').value.trim();
+                    const messageValue = document.getElementById('message').value.trim();
+                    
+                    if (!nameValue || !emailValue || !subjectValue || !messageValue) {
+                        alert('Please fill in all fields.');
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = 'Send Message <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+                        return;
+                    }
+                    
+                    const formData = {
+                        from_name: nameValue,
+                        from_email: emailValue,
+                        subject: subjectValue,
+                        message: messageValue
+                    };
+                    
+                    console.log('Sending form data:', formData);
+                    
+                    // Send email using EmailJS
+                    emailjs.send('service_nblftt8', 'template_x94qjvj', formData)
+                        .then(function(response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                            alert('Thank you for your message! I will get back to you soon.');
+                            form.reset();
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Send Message <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+                        }, function(error) {
+                            console.error('FAILED...', error);
+                            let errorMsg = 'Sorry, there was an error sending your message. ';
+                            if (error.text) {
+                                errorMsg += 'Error: ' + error.text;
+                            }
+                            errorMsg += ' Please try again or contact me directly at praneethsai4596@gmail.com';
+                            alert(errorMsg);
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = 'Send Message <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+                        });
+                });
+            }
+        })();
+
+        // Click Explosion Animation
+        document.addEventListener('click', function(e) {
+            // Create explosion container
+            const explosion = document.createElement('div');
+            explosion.className = 'click-explosion';
+            explosion.style.left = e.clientX + 'px';
+            explosion.style.top = e.clientY + 'px';
+            document.body.appendChild(explosion);
+
+            // Create 8 dots arranged in a circle
+            const numDots = 8;
+            const radius = 40; // Distance from center
+            
+            for (let i = 0; i < numDots; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'explosion-dot';
+                
+                // Calculate position for each dot in a circle
+                const angle = (i * 2 * Math.PI) / numDots;
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+                
+                dot.style.setProperty('--x', x + 'px');
+                dot.style.setProperty('--y', y + 'px');
+                
+                explosion.appendChild(dot);
+            }
+
+            // Remove explosion after animation completes
+            setTimeout(() => {
+                explosion.remove();
+            }, 600);
+        });
+
+        // Project quick view modal
+        (function() {
+            const modal = document.getElementById('projectModal');
+            if (!modal) return;
+            const titleEl = modal.querySelector('.project-modal-title');
+            const descEl = modal.querySelector('.project-modal-desc');
+            const tagsEl = modal.querySelector('.project-modal-tags');
+
+            // open
+            document.querySelectorAll('.project-card[data-project]').forEach(card => {
+                card.addEventListener('click', function(ev) {
+                    ev.preventDefault();
+                    const t = this.querySelector('.project-title');
+                    const d = this.querySelector('.project-desc');
+                    const tags = Array.from(this.querySelectorAll('.tag')).map(el => el.textContent.trim());
+
+                    titleEl.textContent = t ? t.textContent : 'Project';
+                    descEl.textContent = d ? d.textContent : '';
+
+                    tagsEl.innerHTML = '';
+                    tags.forEach(txt => {
+                        const s = document.createElement('span');
+                        s.className = 'tag';
+                        s.textContent = txt;
+                        tagsEl.appendChild(s);
+                    });
+
+                    modal.classList.add('open');
+                    modal.setAttribute('aria-hidden', 'false');
+                });
+            });
+
+            // close handlers
+            modal.addEventListener('click', function(ev) {
+                if (ev.target.hasAttribute('data-close') || ev.target.classList.contains('project-modal-backdrop')) {
+                    modal.classList.remove('open');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            });
+            document.addEventListener('keydown', function(ev) {
+                if (ev.key === 'Escape' && modal.classList.contains('open')) {
+                    modal.classList.remove('open');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            });
+        })();
+
+        // Subtle particles in Home only
+        (function() {
+            const section = document.getElementById('home');
+            const canvas = document.getElementById('homeParticles');
+            if (!section || !canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            let width = 0, height = 0, particles = [], mouse = { x: -9999, y: -9999 }, prevMouse = { x: -9999, y: -9999 }, mouseSpeed = 0;
+            const DENSITY = 0.00022; // denser than before
+            const MAX_LINK_DIST = 140;
+            const SPEED = 0.32;
+            const COLOR = 'rgba(255,255,255,0.95)';
+            const LINK = 'rgba(255,255,255,0.20)';
+            const MOUSE_RADIUS = 170;
+            const FRICTION = 0.985;
+
+            function resize() {
+                const rect = section.getBoundingClientRect();
+                width = canvas.width = rect.width * window.devicePixelRatio;
+                height = canvas.height = rect.height * window.devicePixelRatio;
+                canvas.style.width = rect.width + 'px';
+                canvas.style.height = rect.height + 'px';
+                ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+
+                const count = Math.max(60, Math.floor(rect.width * rect.height * DENSITY));
+                particles = Array.from({ length: count }, () => newParticle(rect));
+            }
+
+            function newParticle(rect) {
+                return {
+                    x: Math.random() * rect.width,
+                    y: Math.random() * rect.height,
+                    vx: (Math.random() - 0.5) * SPEED,
+                    vy: (Math.random() - 0.5) * SPEED,
+                    ax: 0, ay: 0,
+                    r: 1.2 + Math.random() * 1.6,
+                    seed: Math.random() * 1000
+                };
+            }
+
+            let t0 = performance.now();
+            function step(now) {
+                const t = (now || performance.now()) - t0;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Update particles
+                for (const p of particles) {
+                    // noise-like drift
+                    p.ax += 0.05 * Math.sin(0.0013 * t + p.seed);
+                    p.ay += 0.05 * Math.cos(0.0011 * t + p.seed);
+
+                    // mouse influence (attract with slight orbit; repel if mouse is down)
+                    const dx = p.x - mouse.x; const dy = p.y - mouse.y;
+                    const d = Math.hypot(dx, dy);
+                    if (d < MOUSE_RADIUS) {
+                        const force = (mouse.down ? 1 : -1) * (1 - d / MOUSE_RADIUS); // repel when down, attract otherwise
+                        // factor in mouse speed for more dynamic feel
+                        p.ax += (dx / (d || 1)) * force * (0.35 + mouseSpeed * 0.25);
+                        p.ay += (dy / (d || 1)) * force * (0.35 + mouseSpeed * 0.25);
+                        // tiny tangent impulse to create swirls
+                        p.vx += -dy * 0.0006; p.vy += dx * 0.0006;
+                    }
+
+                    // integrate
+                    p.vx = (p.vx + p.ax * 0.01) * FRICTION;
+                    p.vy = (p.vy + p.ay * 0.01) * FRICTION;
+                    p.x += p.vx; p.y += p.vy;
+                    p.ax = 0; p.ay = 0;
+
+                    // wrap around softly
+                    if (p.x < -10) p.x = width / window.devicePixelRatio + 10;
+                    if (p.x > width / window.devicePixelRatio + 10) p.x = -10;
+                    if (p.y < -10) p.y = height / window.devicePixelRatio + 10;
+                    if (p.y > height / window.devicePixelRatio + 10) p.y = -10;
+
+                    // draw point
+                    ctx.fillStyle = COLOR;
+                    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+                }
+
+                // links
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const a = particles[i], b = particles[j];
+                        const dx = a.x - b.x, dy = a.y - b.y; const dist = Math.hypot(dx, dy);
+                        if (dist < MAX_LINK_DIST) {
+                            ctx.strokeStyle = LINK;
+                            ctx.lineWidth = 1;
+                            ctx.globalAlpha = 1 - dist / MAX_LINK_DIST;
+                            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+                            ctx.globalAlpha = 1;
+                        }
+                    }
+                }
+
+                // connect mouse to nearest particles for extra interaction
+                if (mouse.x > -9990) {
+                    const near = particles.filter(p => Math.hypot(p.x - mouse.x, p.y - mouse.y) < 90);
+                    for (const p of near) {
+                        const dist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+                        ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+                        ctx.lineWidth = 1;
+                        ctx.globalAlpha = 1 - dist / 90;
+                        ctx.beginPath(); ctx.moveTo(mouse.x, mouse.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+                        ctx.globalAlpha = 1;
+                    }
+                }
+
+                requestAnimationFrame(step);
+            }
+
+            function onMouse(e) {
+                const rect = canvas.getBoundingClientRect();
+                const mx = (e.clientX - rect.left);
+                const my = (e.clientY - rect.top);
+                // mouse speed (pixels per frame approx)
+                const vx = mx - prevMouse.x; const vy = my - prevMouse.y;
+                mouseSpeed = Math.min(8, Math.hypot(vx, vy) / 12);
+                prevMouse.x = mouse.x = mx; prevMouse.y = mouse.y = my;
+            }
+            function onLeave(){ mouse.x = mouse.y = -9999; mouseSpeed = 0; }
+            function onDown(){ mouse.down = true; }
+            function onUp(){ mouse.down = false; }
+
+            window.addEventListener('resize', resize);
+            window.addEventListener('load', resize);
+            section.addEventListener('mousemove', onMouse);
+            section.addEventListener('mouseleave', onLeave);
+            section.addEventListener('mousedown', onDown);
+            section.addEventListener('mouseup', onUp);
+
+            // click burst: add outward velocity to nearby particles
+            section.addEventListener('click', function(){
+                for (const p of particles) {
+                    const dx = p.x - mouse.x, dy = p.y - mouse.y; const d = Math.hypot(dx, dy);
+                    if (d < 120) { const k = (120 - d) / 120; p.vx += (dx / (d || 1)) * 1.2 * k; p.vy += (dy / (d || 1)) * 1.2 * k; }
+                }
+            });
+
+            resize();
+            requestAnimationFrame(step);
+        })();
+
+        // About card tilt interaction
+        (function(){
+            const card = document.getElementById('aboutCard');
+            if(!card) return;
+            const MAX_TILT = 6;
+            function onMove(e){
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.transform = `rotateY(${x*MAX_TILT}deg) rotateX(${-y*MAX_TILT}deg)`;
+            }
+            function reset(){ card.style.transform = 'rotateY(0) rotateX(0)'; }
+            card.addEventListener('mousemove', onMove);
+            card.addEventListener('mouseleave', reset);
+        })();
+
+        // Welcome video transition - viewport-based playback
+        (function(){
+            const container = document.querySelector('.inline-media-component-container.welcome-video');
+            const video = document.getElementById('welcome-video');
+            const wrapper = document.querySelector('.video-wrapper');
+            if(!container || !video || !wrapper) return;
+
+            let hasPlayed = false;
+            let isIntersecting = false;
+
+            // Intersection Observer for viewport detection
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    isIntersecting = entry.isIntersecting;
+                    if(isIntersecting && !hasPlayed && video.src){
+                        video.play().catch(() => {});
+                        hasPlayed = true;
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            // Load video when in viewport (you'll need to add your video source)
+            function initVideo(){
+                // Example: video.src = 'path/to/your/video.mp4';
+                // For now, hide if no video source
+                if(!video.src){
+                    container.classList.add('hide-ui');
+                    return;
+                }
+                video.load();
+                container.classList.remove('media-unloaded');
+                wrapper.classList.remove('media-unloaded');
+                observer.observe(container);
+            }
+
+            // Check when video can play
+            video.addEventListener('loadeddata', () => {
+                video.classList.add('play-initiated');
+            });
+
+            video.addEventListener('ended', () => {
+                video.currentTime = 0;
+                video.play();
+            });
+
+            // Initialize on load
+            window.addEventListener('load', initVideo);
+            if(document.readyState === 'complete') initVideo();
+        })();
+
+        // Digital Clock Functionality
+        function updateClock() {
+            const clockElement = document.getElementById('contactClock');
+            if (!clockElement) return;
+            
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            // Convert to 12-hour format
+            hours = hours % 12;
+            hours = hours ? hours : 12; // 0 should be 12
+            
+            // Format with leading zeros and spaces around colons
+            const formattedTime = `${hours} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')} ${ampm}`;
+            clockElement.textContent = formattedTime;
+        }
+        
+        // Update clock immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // Rotating Ball Animation for Skills Section
+        (function() {
+            const canvas = document.getElementById('skillsBall');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            let animationFrameId;
+            
+            // Set canvas size
+            function resizeCanvas() {
+                const container = document.getElementById('skills');
+                if (container) {
+                    canvas.width = container.offsetWidth;
+                    canvas.height = container.offsetHeight;
+                }
+            }
+            
+            const centerX = () => canvas.width / 2;
+            const centerY = () => canvas.height / 2;
+            const radius = 120;
+            let rotation = 0;
+            
+            function drawBall() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                const cx = centerX();
+                const cy = centerY();
+                
+                // Rotate continuously
+                rotation += 0.01;
+                
+                // Create gradient for outer glow
+                const outerGradient = ctx.createRadialGradient(cx, cy, radius * 0.7, cx, cy, radius * 1.5);
+                outerGradient.addColorStop(0, 'rgba(255, 255, 255, 0.18)');
+                outerGradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.08)');
+                outerGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+                
+                // Draw outer glow
+                ctx.fillStyle = outerGradient;
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius * 1.5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Create gradient for main sphere
+                const mainGradient = ctx.createRadialGradient(
+                    cx - radius * 0.3, cy - radius * 0.3, 0,
+                    cx, cy, radius
+                );
+                mainGradient.addColorStop(0, 'rgba(255, 255, 255, 0.25)');
+                mainGradient.addColorStop(0.4, 'rgba(255, 255, 255, 0.15)');
+                mainGradient.addColorStop(0.8, 'rgba(255, 255, 255, 0.08)');
+                mainGradient.addColorStop(1, 'rgba(255, 255, 255, 0.03)');
+                
+                // Draw main sphere
+                ctx.fillStyle = mainGradient;
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Draw internal lightning/energy patterns
+                ctx.save();
+                ctx.translate(cx, cy);
+                ctx.rotate(rotation);
+                
+                // Draw multiple curved lines inside the sphere
+                for (let i = 0; i < 8; i++) {
+                    const angle = (Math.PI * 2 * i) / 8;
+                    const innerRadius = radius * 0.3;
+                    const outerRadius = radius * 0.9;
+                    
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${0.15 + Math.sin(rotation * 2 + i) * 0.1})`;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, (innerRadius + outerRadius) / 2, angle - 0.2, angle + 0.2);
+                    ctx.stroke();
+                    
+                    // Branching patterns
+                    for (let j = 0; j < 3; j++) {
+                        const branchAngle = angle + (j - 1) * 0.15;
+                        const branchStart = innerRadius + (outerRadius - innerRadius) * 0.4;
+                        const branchEnd = branchStart + (outerRadius - innerRadius) * 0.3;
+                        
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 + Math.sin(rotation * 3 + i + j) * 0.05})`;
+                        ctx.lineWidth = 1.5;
+                        ctx.beginPath();
+                        ctx.arc(0, 0, branchStart, branchAngle - 0.1, branchAngle + 0.1);
+                        ctx.stroke();
+                    }
+                }
+                
+                ctx.restore();
+                
+                animationFrameId = requestAnimationFrame(drawBall);
+            }
+            
+            // Initialize
+            resizeCanvas();
+            drawBall();
+            
+            window.addEventListener('resize', () => {
+                resizeCanvas();
+            });
+        })();
+
+        // Particles in Skills Section (Left and Right)
+        (function() {
+            const section = document.getElementById('skills');
+            const canvasLeft = document.getElementById('skillsParticlesLeft');
+            const canvasRight = document.getElementById('skillsParticlesRight');
+            if (!section || !canvasLeft || !canvasRight) return;
+
+            function initParticles(canvas, side) {
+                const ctx = canvas.getContext('2d');
+                let width = 0, height = 0, particles = [];
+                let mouse = { x: -9999, y: -9999 }, prevMouse = { x: -9999, y: -9999 }, mouseSpeed = 0;
+                const DENSITY = 0.00015;
+                const MAX_LINK_DIST = 120;
+                const SPEED = 0.28;
+                const COLOR = 'rgba(255,255,255,0.85)';
+                const LINK = 'rgba(255,255,255,0.18)';
+                const MOUSE_RADIUS = 150;
+                const FRICTION = 0.985;
+
+                function resize() {
+                    const rect = section.getBoundingClientRect();
+                    width = canvas.width = (rect.width * 0.3) * window.devicePixelRatio;
+                    height = canvas.height = rect.height * window.devicePixelRatio;
+                    canvas.style.width = (rect.width * 0.3) + 'px';
+                    canvas.style.height = rect.height + 'px';
+                    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+
+                    const count = Math.max(40, Math.floor((rect.width * 0.3) * rect.height * DENSITY));
+                    particles = Array.from({ length: count }, () => newParticle());
+                }
+
+                function newParticle() {
+                    return {
+                        x: Math.random() * (width / window.devicePixelRatio),
+                        y: Math.random() * (height / window.devicePixelRatio),
+                        vx: (Math.random() - 0.5) * SPEED,
+                        vy: (Math.random() - 0.5) * SPEED,
+                        ax: 0, ay: 0,
+                        r: 1.0 + Math.random() * 1.4,
+                        seed: Math.random() * 1000
+                    };
+                }
+
+                let t0 = performance.now();
+                function step(now) {
+                    const t = (now || performance.now()) - t0;
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    for (const p of particles) {
+                        // noise-like drift
+                        p.ax += 0.04 * Math.sin(0.0015 * t + p.seed);
+                        p.ay += 0.04 * Math.cos(0.0013 * t + p.seed);
+
+                        // mouse influence - adjust coordinates based on side
+                        if (mouse.x > -9990 && mouse.y > -9990) {
+                            const sectionRect = section.getBoundingClientRect();
+                            let mouseX = mouse.x;
+                            
+                            // Adjust mouse x position based on which side canvas this is
+                            // Both sides now use the same coordinate system (0 to canvas width)
+                            if (side === 'right') {
+                                // mouse.x is already converted to canvas-relative in onMouse function
+                                mouseX = mouse.x;
+                            }
+                            // Left canvas mouseX is already relative to canvas
+
+                            const dx = p.x - mouseX;
+                            const dy = p.y - mouse.y;
+                            const d = Math.hypot(dx, dy);
+                            
+                            if (d < MOUSE_RADIUS) {
+                                // Always repel on hover (negative force), same as left side
+                                const force = -1 * (1 - d / MOUSE_RADIUS);
+                                p.ax += (dx / (d || 1)) * force * (0.3 + mouseSpeed * 0.2);
+                                p.ay += (dy / (d || 1)) * force * (0.3 + mouseSpeed * 0.2);
+                                // tiny tangent impulse to create swirls
+                                p.vx += -dy * 0.0005;
+                                p.vy += dx * 0.0005;
+                            }
+                        }
+
+                        // integrate
+                        p.vx = (p.vx + p.ax * 0.01) * FRICTION;
+                        p.vy = (p.vy + p.ay * 0.01) * FRICTION;
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.ax = 0;
+                        p.ay = 0;
+
+                        if (p.x < -10) p.x = (width / window.devicePixelRatio) + 10;
+                        if (p.x > (width / window.devicePixelRatio) + 10) p.x = -10;
+                        if (p.y < -10) p.y = (height / window.devicePixelRatio) + 10;
+                        if (p.y > (height / window.devicePixelRatio) + 10) p.y = -10;
+
+                        ctx.fillStyle = COLOR;
+                        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+                    }
+
+                    for (let i = 0; i < particles.length; i++) {
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const a = particles[i], b = particles[j];
+                            const dx = a.x - b.x, dy = a.y - b.y; const dist = Math.hypot(dx, dy);
+                            if (dist < MAX_LINK_DIST) {
+                                ctx.strokeStyle = LINK;
+                                ctx.lineWidth = 1;
+                                ctx.globalAlpha = 1 - dist / MAX_LINK_DIST;
+                                ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+                                ctx.globalAlpha = 1;
+                            }
+                        }
+                    }
+
+                    // connect mouse to nearest particles
+                    if (mouse.x > -9990 && mouse.y > -9990) {
+                        let mouseX = mouse.x;
+                        // Both sides use the same coordinate system now
+                        if (side === 'right') {
+                            mouseX = mouse.x; // Already converted in onMouse
+                        }
+                        
+                        const near = particles.filter(p => {
+                            const dx = p.x - mouseX, dy = p.y - mouse.y;
+                            return Math.hypot(dx, dy) < 85;
+                        });
+                        for (const p of near) {
+                            const dx = p.x - mouseX, dy = p.y - mouse.y;
+                            const dist = Math.hypot(dx, dy);
+                            ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+                            ctx.lineWidth = 1;
+                            ctx.globalAlpha = 1 - dist / 85;
+                            ctx.beginPath(); ctx.moveTo(mouseX, mouse.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+                            ctx.globalAlpha = 1;
+                        }
+                    }
+
+                    requestAnimationFrame(step);
+                }
+
+                function onMouse(e) {
+                    const sectionRect = section.getBoundingClientRect();
+                    let mx = e.clientX - sectionRect.left;
+                    let my = e.clientY - sectionRect.top;
+                    
+                    // Adjust for which side canvas this is
+                    if (side === 'right') {
+                        // Right canvas is from 70% to 100% of section width
+                        if (mx < (sectionRect.width * 0.7) || mx > sectionRect.width) {
+                            mouse.x = mouse.y = -9999;
+                            mouseSpeed = 0;
+                            return;
+                        }
+                        mx = mx - (sectionRect.width * 0.7); // Convert to canvas-relative coordinates
+                    } else if (side === 'left') {
+                        // Left canvas is from 0% to 30% of section width
+                        if (mx > (sectionRect.width * 0.3) || mx < 0) {
+                            mouse.x = mouse.y = -9999;
+                            mouseSpeed = 0;
+                            return;
+                        }
+                        // mx is already relative to canvas for left side
+                    }
+                    
+                    // Check if mouse is within canvas bounds (both sides use same check now)
+                    if (mx >= 0 && mx <= (sectionRect.width * 0.3) && my >= 0 && my <= sectionRect.height) {
+                        const vx = mx - prevMouse.x;
+                        const vy = my - prevMouse.y;
+                        mouseSpeed = Math.min(8, Math.hypot(vx, vy) / 12);
+                        prevMouse.x = mouse.x = mx;
+                        prevMouse.y = mouse.y = my;
+                    } else {
+                        mouse.x = mouse.y = -9999;
+                        mouseSpeed = 0;
+                    }
+                }
+                
+                function onLeave() {
+                    mouse.x = mouse.y = -9999;
+                    mouseSpeed = 0;
+                }
+                
+                function onDown() {
+                    mouse.down = true;
+                }
+                
+                function onUp() {
+                    mouse.down = false;
+                }
+
+                window.addEventListener('resize', resize);
+                window.addEventListener('load', resize);
+                section.addEventListener('mousemove', onMouse);
+                section.addEventListener('mouseleave', onLeave);
+                section.addEventListener('mousedown', onDown);
+                section.addEventListener('mouseup', onUp);
+                
+                // click burst effect
+                section.addEventListener('click', function(e) {
+                    const sectionRect = section.getBoundingClientRect();
+                    let mx = e.clientX - sectionRect.left;
+                    let my = e.clientY - sectionRect.top;
+                    
+                    if (side === 'right') {
+                        mx = mx - (sectionRect.width * 0.7);
+                    }
+                    
+                    if (mx >= 0 && mx <= (sectionRect.width * 0.3)) {
+                        for (const p of particles) {
+                            const dx = p.x - mx, dy = p.y - my;
+                            const d = Math.hypot(dx, dy);
+                            if (d < 110) {
+                                const k = (110 - d) / 110;
+                                p.vx += (dx / (d || 1)) * 1.0 * k;
+                                p.vy += (dy / (d || 1)) * 1.0 * k;
+                            }
+                        }
+                    }
+                });
+
+                resize();
+                requestAnimationFrame(step);
+            }
+
+            initParticles(canvasLeft, 'left');
+            initParticles(canvasRight, 'right');
+        })();
+
+        // Particles in Projects Section (Left and Right)
+        (function() {
+            const section = document.getElementById('projects');
+            const canvasLeft = document.getElementById('projectsParticlesLeft');
+            const canvasRight = document.getElementById('projectsParticlesRight');
+            if (!section || !canvasLeft || !canvasRight) return;
+
+            function initParticles(canvas, side) {
+                const ctx = canvas.getContext('2d');
+                let width = 0, height = 0, particles = [];
+                let mouse = { x: -9999, y: -9999 }, prevMouse = { x: -9999, y: -9999 }, mouseSpeed = 0;
+                const DENSITY = 0.00015;
+                const MAX_LINK_DIST = 120;
+                const SPEED = 0.28;
+                const COLOR = 'rgba(255,255,255,0.85)';
+                const LINK = 'rgba(255,255,255,0.18)';
+                const MOUSE_RADIUS = 150;
+                const FRICTION = 0.985;
+
+                function resize() {
+                    const rect = section.getBoundingClientRect();
+                    width = canvas.width = (rect.width * 0.3) * window.devicePixelRatio;
+                    height = canvas.height = rect.height * window.devicePixelRatio;
+                    canvas.style.width = (rect.width * 0.3) + 'px';
+                    canvas.style.height = rect.height + 'px';
+                    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+
+                    const count = Math.max(40, Math.floor((rect.width * 0.3) * rect.height * DENSITY));
+                    particles = Array.from({ length: count }, () => newParticle());
+                }
+
+                function newParticle() {
+                    return {
+                        x: Math.random() * (width / window.devicePixelRatio),
+                        y: Math.random() * (height / window.devicePixelRatio),
+                        vx: (Math.random() - 0.5) * SPEED,
+                        vy: (Math.random() - 0.5) * SPEED,
+                        ax: 0, ay: 0,
+                        r: 1.0 + Math.random() * 1.4,
+                        seed: Math.random() * 1000
+                    };
+                }
+
+                let t0 = performance.now();
+                function step(now) {
+                    const t = (now || performance.now()) - t0;
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    for (const p of particles) {
+                        // noise-like drift
+                        p.ax += 0.04 * Math.sin(0.0015 * t + p.seed);
+                        p.ay += 0.04 * Math.cos(0.0013 * t + p.seed);
+
+                        // mouse influence - adjust coordinates based on side
+                        if (mouse.x > -9990 && mouse.y > -9990) {
+                            const sectionRect = section.getBoundingClientRect();
+                            let mouseX = mouse.x;
+                            
+                            // Adjust mouse x position based on which side canvas this is
+                            // Both sides now use the same coordinate system (0 to canvas width)
+                            if (side === 'right') {
+                                // mouse.x is already converted to canvas-relative in onMouse function
+                                mouseX = mouse.x;
+                            }
+                            // Left canvas mouseX is already relative to canvas
+
+                            const dx = p.x - mouseX;
+                            const dy = p.y - mouse.y;
+                            const d = Math.hypot(dx, dy);
+                            
+                            if (d < MOUSE_RADIUS) {
+                                // Always repel on hover (negative force), same as left side
+                                const force = -1 * (1 - d / MOUSE_RADIUS);
+                                p.ax += (dx / (d || 1)) * force * (0.3 + mouseSpeed * 0.2);
+                                p.ay += (dy / (d || 1)) * force * (0.3 + mouseSpeed * 0.2);
+                                // tiny tangent impulse to create swirls
+                                p.vx += -dy * 0.0005;
+                                p.vy += dx * 0.0005;
+                            }
+                        }
+
+                        // integrate
+                        p.vx = (p.vx + p.ax * 0.01) * FRICTION;
+                        p.vy = (p.vy + p.ay * 0.01) * FRICTION;
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.ax = 0;
+                        p.ay = 0;
+
+                        if (p.x < -10) p.x = (width / window.devicePixelRatio) + 10;
+                        if (p.x > (width / window.devicePixelRatio) + 10) p.x = -10;
+                        if (p.y < -10) p.y = (height / window.devicePixelRatio) + 10;
+                        if (p.y > (height / window.devicePixelRatio) + 10) p.y = -10;
+
+                        ctx.fillStyle = COLOR;
+                        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+                    }
+
+                    for (let i = 0; i < particles.length; i++) {
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const a = particles[i], b = particles[j];
+                            const dx = a.x - b.x, dy = a.y - b.y; const dist = Math.hypot(dx, dy);
+                            if (dist < MAX_LINK_DIST) {
+                                ctx.strokeStyle = LINK;
+                                ctx.lineWidth = 1;
+                                ctx.globalAlpha = 1 - dist / MAX_LINK_DIST;
+                                ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+                                ctx.globalAlpha = 1;
+                            }
+                        }
+                    }
+
+                    // connect mouse to nearest particles
+                    if (mouse.x > -9990 && mouse.y > -9990) {
+                        let mouseX = mouse.x;
+                        // Both sides use the same coordinate system now
+                        if (side === 'right') {
+                            mouseX = mouse.x; // Already converted in onMouse
+                        }
+                        
+                        const near = particles.filter(p => {
+                            const dx = p.x - mouseX, dy = p.y - mouse.y;
+                            return Math.hypot(dx, dy) < 85;
+                        });
+                        for (const p of near) {
+                            const dx = p.x - mouseX, dy = p.y - mouse.y;
+                            const dist = Math.hypot(dx, dy);
+                            ctx.strokeStyle = 'rgba(255,255,255,0.16)';
+                            ctx.lineWidth = 1;
+                            ctx.globalAlpha = 1 - dist / 85;
+                            ctx.beginPath(); ctx.moveTo(mouseX, mouse.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+                            ctx.globalAlpha = 1;
+                        }
+                    }
+
+                    requestAnimationFrame(step);
+                }
+
+                function onMouse(e) {
+                    const sectionRect = section.getBoundingClientRect();
+                    let mx = e.clientX - sectionRect.left;
+                    let my = e.clientY - sectionRect.top;
+                    
+                    // Adjust for which side canvas this is
+                    if (side === 'right') {
+                        // Right canvas is from 70% to 100% of section width
+                        if (mx < (sectionRect.width * 0.7) || mx > sectionRect.width) {
+                            mouse.x = mouse.y = -9999;
+                            mouseSpeed = 0;
+                            return;
+                        }
+                        mx = mx - (sectionRect.width * 0.7); // Convert to canvas-relative coordinates
+                    } else if (side === 'left') {
+                        // Left canvas is from 0% to 30% of section width
+                        if (mx > (sectionRect.width * 0.3) || mx < 0) {
+                            mouse.x = mouse.y = -9999;
+                            mouseSpeed = 0;
+                            return;
+                        }
+                        // mx is already relative to canvas for left side
+                    }
+                    
+                    // Check if mouse is within canvas bounds (both sides use same check now)
+                    if (mx >= 0 && mx <= (sectionRect.width * 0.3) && my >= 0 && my <= sectionRect.height) {
+                        const vx = mx - prevMouse.x;
+                        const vy = my - prevMouse.y;
+                        mouseSpeed = Math.min(8, Math.hypot(vx, vy) / 12);
+                        prevMouse.x = mouse.x = mx;
+                        prevMouse.y = mouse.y = my;
+                    } else {
+                        mouse.x = mouse.y = -9999;
+                        mouseSpeed = 0;
+                    }
+                }
+                
+                function onLeave() {
+                    mouse.x = mouse.y = -9999;
+                    mouseSpeed = 0;
+                }
+                
+                function onDown() {
+                    mouse.down = true;
+                }
+                
+                function onUp() {
+                    mouse.down = false;
+                }
+
+                window.addEventListener('resize', resize);
+                window.addEventListener('load', resize);
+                section.addEventListener('mousemove', onMouse);
+                section.addEventListener('mouseleave', onLeave);
+                section.addEventListener('mousedown', onDown);
+                section.addEventListener('mouseup', onUp);
+                
+                // click burst effect
+                section.addEventListener('click', function(e) {
+                    const sectionRect = section.getBoundingClientRect();
+                    let mx = e.clientX - sectionRect.left;
+                    let my = e.clientY - sectionRect.top;
+                    
+                    if (side === 'right') {
+                        mx = mx - (sectionRect.width * 0.7);
+                    }
+                    
+                    if (mx >= 0 && mx <= (sectionRect.width * 0.3)) {
+                        for (const p of particles) {
+                            const dx = p.x - mx, dy = p.y - my;
+                            const d = Math.hypot(dx, dy);
+                            if (d < 110) {
+                                const k = (110 - d) / 110;
+                                p.vx += (dx / (d || 1)) * 1.0 * k;
+                                p.vy += (dy / (d || 1)) * 1.0 * k;
+                            }
+                        }
+                    }
+                });
+
+                resize();
+                requestAnimationFrame(step);
+            }
+
+            initParticles(canvasLeft, 'left');
+            initParticles(canvasRight, 'right');
+        })();
+
+        // Skills Section Background Video
+        (function() {
+            const video = document.querySelector('.skills-bg-video');
+            if (!video) return;
+
+            // Set video source
+            const videoSource = video.querySelector('source');
+            if (videoSource && videoSource.src) {
+                video.load();
+            }
+
+            // Force play with error handling
+            function playVideo() {
+                if (video.readyState >= 2) {
+                    video.play().catch(err => {
+                        console.log('Video autoplay prevented:', err);
+                        // Try again after user interaction
+                        document.addEventListener('click', () => {
+                            video.play().catch(() => {});
+                        }, { once: true });
+                    });
+                }
+            }
+
+            // Try to play when video is loaded
+            video.addEventListener('loadeddata', () => {
+                playVideo();
+            });
+
+            // Try to play when metadata is loaded
+            video.addEventListener('loadedmetadata', () => {
+                playVideo();
+            });
+
+            // Ensure video loops
+            video.addEventListener('ended', () => {
+                video.currentTime = 0;
+                video.play().catch(() => {});
+            });
+
+            // Initial play attempt
+            if (video.readyState >= 2) {
+                playVideo();
+            } else {
+                video.load();
+            }
+
+            // Error handling
+            video.addEventListener('error', (e) => {
+                console.error('Video error:', e);
+                console.log('Video source:', videoSource ? videoSource.src : 'not found');
+            });
+        })();
+
+    </script>
+
+    <!-- Loading Screen Animation -->
+    <script>
+        (function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const progressPercentage = document.getElementById('loadingProgressPercentage');
+            const loadingCaption = document.querySelector('.loading-caption');
+            const square1 = document.querySelector('.loading-progress-square-1');
+            const square2 = document.querySelector('.loading-progress-square-2');
+            const square3 = document.querySelector('.loading-progress-square-3');
+            
+            let progress = 0;
+            let isComplete = false;
+            
+            // Start loading
+            document.body.classList.add('loading');
+            
+            // Update loading progress
+            function updateLoadingProgress() {
+                if (isComplete) return;
+                
+                // Simulate loading progress - start fast, slow near end
+                const baseSpeed = 2.5; // Percentage per frame
+                const remaining = 100 - progress;
+                const speed = baseSpeed * (0.5 + (remaining / 100) * 0.5);
+                
+                progress = Math.min(100, progress + speed);
+                progressPercentage.textContent = Math.floor(progress) + '%';
+                
+                // Light up squares progressively (cumulative): 0-33% = square1, 33-66% = square1+2, 66-100% = all three
+                if (progress >= 0 && progress < 33) {
+                    if (square1) square1.classList.add('lit');
+                    if (square2) square2.classList.remove('lit');
+                    if (square3) square3.classList.remove('lit');
+                } else if (progress >= 33 && progress < 66) {
+                    if (square1) square1.classList.add('lit');
+                    if (square2) square2.classList.add('lit');
+                    if (square3) square3.classList.remove('lit');
+                } else if (progress >= 66) {
+                    if (square1) square1.classList.add('lit');
+                    if (square2) square2.classList.add('lit');
+                    if (square3) square3.classList.add('lit');
+                }
+                
+                // Check if complete
+                if (progress >= 100 && !isComplete) {
+                    isComplete = true;
+                    
+                    // Fade out the caption
+                    if (loadingCaption) {
+                        loadingCaption.classList.add('fade-out');
+                    }
+                    
+                    // Wait a moment then hide loading screen and show website
+                    setTimeout(() => {
+                        loadingScreen.classList.add('hidden');
+                        document.body.classList.remove('loading');
+                        document.body.classList.add('loaded');
+                        
+                        // Remove loading screen from DOM after transition
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 500);
+                    }, 600); // Increased timeout to allow caption fade
+                } else {
+                    requestAnimationFrame(updateLoadingProgress);
+                }
+            }
+            
+            // Start animation
+            requestAnimationFrame(updateLoadingProgress);
+        })();
+    </script>
+</body>
+</html>
