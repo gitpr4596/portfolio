@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="MOBILE_FIXES.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Preload critical images for faster loading -->
+    <link rel="preload" as="image" href="logo.jpeg" fetchpriority="high">
+    <link rel="preload" as="image" href="profilepic.jpeg" fetchpriority="high">
+    <link rel="preload" as="image" href="pslogo.jpeg" fetchpriority="high">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -139,12 +144,12 @@
                         <p class="about-me-text">I am an ambitious and skilled Electronics and Computer Engineering (B.Tech) graduate with a passion for transforming complex problems into efficient, scalable software solutions. Proficient in core languages like C++, Python, and Java, I bring practical experience in both full-stack development and cutting-edge Machine Learning/Deep Learning (ML/DL) projects. I am currently expanding my skills in UI/UX design and leveraging tools like Figma, Canva, and Adobe Photoshop. I am eager to apply my technical depth and software integration expertise to build innovative applications and contribute to a company's technological advancements.</p>
                     </div>
                 </div>
-                <img class="about-photo-right" src="profilepic.jpeg" alt="Profile photo" />
+                <img class="about-photo-right" src="profilepic.jpeg" alt="Profile photo" loading="eager" fetchpriority="high" />
                 <div class="about-experience">
                     <div class="experience-label">Currently Working at</div>
                     <div class="experience-row">
                         <div class="experience-logo-container">
-                            <img src="logo.jpeg" alt="SSEV SOFTSOLS Logo" class="experience-logo" onerror="this.style.display='none'; console.error('Logo image failed to load');">
+                            <img src="logo.jpeg" alt="SSEV SOFTSOLS Logo" class="experience-logo" loading="eager" fetchpriority="high" onerror="this.style.display='none'; console.error('Logo image failed to load');">
                         </div>
                         <div class="experience-company">SSEV SOFTSOLS</div>
                         <div class="experience-extra">
@@ -301,7 +306,7 @@
                                     <div class="certification-right-side">
                                         <div class="certification-timeline">Feb 2025</div>
                                         <div class="certification-logo">
-                                            <img src="fullstack-academy-logo.jpeg" alt="Full Stack Academy Logo" class="certification-logo-img">
+                                            <img src="fullstack-academy-logo.jpeg" alt="Full Stack Academy Logo" class="certification-logo-img" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
@@ -319,7 +324,7 @@
                                     <div class="certification-right-side">
                                         <div class="certification-timeline">Mar 2025</div>
                                         <div class="certification-logo">
-                                            <img src="forage-schema-logo.jpeg" alt="Forage Logo" class="certification-logo-img">
+                                            <img src="forage-schema-logo.jpeg" alt="Forage Logo" class="certification-logo-img" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
@@ -337,7 +342,7 @@
                                     <div class="certification-right-side">
                                         <div class="certification-timeline">Jul 2024 - Aug 2024</div>
                                         <div class="certification-logo">
-                                            <img src="brainovision-logo.jpeg" alt="Brain O Vision Logo" class="certification-logo-img">
+                                            <img src="brainovision-logo.jpeg" alt="Brain O Vision Logo" class="certification-logo-img" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
@@ -1089,19 +1094,19 @@
                     <h4 class="project-modal-section-title">Project Images</h4>
                     <div class="project-modal-images">
                         <div class="project-modal-image-item">
-                            <img src="1.jpeg" alt="Dashboard" class="project-modal-image">
+                            <img src="1.jpeg" alt="Dashboard" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Dashboard</p>
                         </div>
                         <div class="project-modal-image-item">
-                            <img src="2.jpeg" alt="PDF Upload" class="project-modal-image">
+                            <img src="2.jpeg" alt="PDF Upload" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Uploaded the PDF successfully; the system processed the file into chunks and extracted metadata.</p>
                         </div>
                         <div class="project-modal-image-item">
-                            <img src="3.jpeg" alt="Hybrid Retrieval Query" class="project-modal-image">
+                            <img src="3.jpeg" alt="Hybrid Retrieval Query" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Submitted a hybrid retrieval query combining vector search; no graph search enabled in this request.</p>
                         </div>
                         <div class="project-modal-image-item">
-                            <img src="4.jpeg" alt="LLM Answer" class="project-modal-image">
+                            <img src="4.jpeg" alt="LLM Answer" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Received an LLM-generated answer with referenced text chunks retrieved from the vector database.</p>
                         </div>
                     </div>
@@ -1322,15 +1327,15 @@
                     <h4 class="project-modal-section-title">Project Images</h4>
                     <div class="project-modal-images">
                         <div class="project-modal-image-item">
-                            <img src="login.jpeg" alt="ERP Login" class="project-modal-image">
+                            <img src="login.jpeg" alt="ERP Login" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Login</p>
                         </div>
                         <div class="project-modal-image-item">
-                            <img src="dashboard.jpeg" alt="ERP Dashboard" class="project-modal-image">
+                            <img src="dashboard.jpeg" alt="ERP Dashboard" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Dashboard</p>
                         </div>
                         <div class="project-modal-image-item">
-                            <img src="attendance module.jpeg" alt="ERP Attendance Module" class="project-modal-image">
+                            <img src="attendance module.jpeg" alt="ERP Attendance Module" class="project-modal-image" loading="lazy" decoding="async">
                             <p class="project-modal-image-caption">Attendance Module</p>
                         </div>
                     </div>

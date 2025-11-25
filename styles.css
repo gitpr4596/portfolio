@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Image Loading Optimizations */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    will-change: auto;
+}
+
+/* Optimize large images */
+.project-modal-image,
+.certification-logo-img {
+    content-visibility: auto;
+    contain-intrinsic-size: 300px 200px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #000000;
