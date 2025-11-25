@@ -227,16 +227,20 @@
                             </div>
                         </div>
 
-                        <!-- Machine Learning Box -->
+                        <!-- AI and RAG Stack Box -->
                         <div class="skill-box">
                             <div class="skill-box-inner">
                                 <div class="skill-accent"></div>
-                                <h3 class="skill-box-title">Machine Learning</h3>
+                                <h3 class="skill-box-title">AI and RAG Stack</h3>
                                 <div class="skill-items">
-                                    <span class="skill-item">Neural Networks</span>
-                                    <span class="skill-item">Decision Trees</span>
-                                    <span class="skill-item">Random Forests</span>
-                                    <span class="skill-item">Support Vector Machine (SVM)</span>
+                                    <span class="skill-item">FastAPI</span>
+                                    <span class="skill-item">LangChain</span>
+                                    <span class="skill-item">Neo4j</span>
+                                    <span class="skill-item">ChromaDB</span>
+                                    <span class="skill-item">OpenAI APIs</span>
+                                    <span class="skill-item">RAG</span>
+                                    <span class="skill-item">Vector Databases</span>
+                                    <span class="skill-item">LLM Orchestration</span>
                                 </div>
                             </div>
                         </div>
@@ -255,15 +259,20 @@
                             </div>
                         </div>
 
-                        <!-- Graphic Design & Design Tools Box -->
+                        <!-- Tools ( Design and Development) Box -->
                         <div class="skill-box">
                             <div class="skill-box-inner">
                                 <div class="skill-accent"></div>
-                                <h3 class="skill-box-title">Graphic Design & Design Tools</h3>
+                                <h3 class="skill-box-title">Tools ( Design and Development)</h3>
                                 <div class="skill-items">
                                     <span class="skill-item">Adobe Photoshop</span>
+                                    <span class="skill-item">Sketch</span>
                                     <span class="skill-item">Canva</span>
                                     <span class="skill-item">Figma</span>
+                                    <span class="skill-item">VS Code</span>
+                                    <span class="skill-item">Jupyter</span>
+                                    <span class="skill-item">PyCharm</span>
+                                    <span class="skill-item">Swagger UI</span>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +298,12 @@
                                         <p class="certification-issuer">Full Stack Academy & Analytics club</p>
                                         <p class="certification-desc">Built interactive Power BI dashboards to track user sentiment trends and model accuracy, identifying key performance drivers.</p>
                                     </div>
-                                    <div class="certification-timeline">Feb 2025</div>
+                                    <div class="certification-right-side">
+                                        <div class="certification-timeline">Feb 2025</div>
+                                        <div class="certification-logo">
+                                            <img src="fullstack-academy-logo.jpeg" alt="Full Stack Academy Logo" class="certification-logo-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -302,7 +316,12 @@
                                         <p class="certification-issuer">Deloitte, issued by Forage</p>
                                         <p class="certification-desc">Completed comprehensive data analytics job simulation through Deloitte's Forage program.</p>
                                     </div>
-                                    <div class="certification-timeline">Mar 2025</div>
+                                    <div class="certification-right-side">
+                                        <div class="certification-timeline">Mar 2025</div>
+                                        <div class="certification-logo">
+                                            <img src="forage-schema-logo.jpeg" alt="Forage Logo" class="certification-logo-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -315,7 +334,12 @@
                                         <p class="certification-issuer">Issued by Brainovision Pvt.Ltd</p>
                                         <p class="certification-desc">Engineered a comprehensive Hospital Management System integrating JDBC, JSP, and SQL to enhance data management processes; improved response times for patient records retrieval by 30% through optimized backend operations.</p>
                                     </div>
-                                    <div class="certification-timeline">Jul 2024 - Aug 2024</div>
+                                    <div class="certification-right-side">
+                                        <div class="certification-timeline">Jul 2024 - Aug 2024</div>
+                                        <div class="certification-logo">
+                                            <img src="brainovision-logo.jpeg" alt="Brain O Vision Logo" class="certification-logo-img">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,6 +441,23 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Advanced RAG Pipeline -->
+                    <a class="project-card" href="#" target="_blank" rel="noopener" data-project>
+                        <div class="project-card-inner">
+                            <div class="project-accent"></div>
+                            <h3 class="project-title">Advanced RAG Pipeline</h3>
+                            <p class="project-desc">Developed a Graph-RAG knowledge engine that extracts entities and relationships from PDF documents, storing them in Neo4j (graph DB) and ChromaDB (vector DB). Implemented hybrid retrieval and a FastAPI backend with multi-LLM support and intelligent fallback mechanisms.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Neo4j</span>
+                                <span class="tag">ChromaDB</span>
+                                <span class="tag">LangChain</span>
+                                <span class="tag">OpenAI</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Project Quick View Modal -->
@@ -424,9 +465,32 @@
                     <div class="project-modal-backdrop" data-close></div>
                     <div class="project-modal-content" role="dialog" aria-modal="true">
                         <button class="project-modal-close" aria-label="Close" data-close>&times;</button>
-                        <h3 class="project-modal-title"></h3>
+                        <div class="project-modal-title-container">
+                            <h3 class="project-modal-title"></h3>
+                            <div class="project-modal-github-container" id="projectModalGithub"></div>
+                        </div>
                         <p class="project-modal-desc"></p>
                         <div class="project-modal-tags"></div>
+                        <div class="project-modal-details" id="projectModalDetails"></div>
+                    </div>
+                </div>
+
+                <!-- PDF Certificate Modal -->
+                <div class="pdf-modal" id="pdfModal" aria-hidden="true">
+                    <div class="pdf-modal-backdrop" data-close></div>
+                    <div class="pdf-modal-content" role="dialog" aria-modal="true">
+                        <button class="pdf-modal-close" aria-label="Close" data-close>&times;</button>
+                        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!-- Image Lightbox Modal -->
+                <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+                    <div class="image-lightbox-backdrop" data-close-lightbox></div>
+                    <div class="image-lightbox-content">
+                        <button class="image-lightbox-close" aria-label="Close" data-close-lightbox>&times;</button>
+                        <img class="image-lightbox-img" id="lightboxImage" src="" alt="">
+                        <p class="image-lightbox-caption" id="lightboxCaption"></p>
                     </div>
                 </div>
             </section>
@@ -743,8 +807,6 @@
             
             // Show Feed and Portfolio only on home section
             const footer = document.querySelector('.footer');
-            const progressIndicator = document.querySelector('.progress-indicator');
-            const contactContainer = document.querySelector('.contact-container');
             
             if (currentSection === 'home' || currentSection === '') {
                 if (feedText) feedText.style.display = 'block';
@@ -753,50 +815,19 @@
                     footer.classList.add('footer-home');
                     footer.style.display = 'flex';
                 }
-                if (progressIndicator) {
-                    progressIndicator.style.position = 'static';
-                    progressIndicator.style.bottom = 'auto';
-                    progressIndicator.style.left = 'auto';
-                    progressIndicator.style.transform = 'none';
-                }
             } else if (currentSection === 'contact') {
-                // Position progress indicator inside contact-container when on contact section
                 if (feedText) feedText.style.display = 'none';
                 if (portfolioText) portfolioText.style.display = 'none';
                 if (footer) {
                     footer.classList.remove('footer-home');
-                    footer.style.display = 'none'; // Hide footer on contact section
-                }
-                if (progressIndicator && contactContainer) {
-                    progressIndicator.style.position = 'absolute';
-                    progressIndicator.style.bottom = '2rem';
-                    progressIndicator.style.left = '3rem';
-                    progressIndicator.style.transform = 'none';
-                    progressIndicator.style.zIndex = '10';
-                    if (!contactContainer.contains(progressIndicator)) {
-                        contactContainer.appendChild(progressIndicator);
-                    }
+                    footer.style.display = 'none';
                 }
             } else {
                 if (feedText) feedText.style.display = 'none';
                 if (portfolioText) portfolioText.style.display = 'none';
                 if (footer) {
                     footer.classList.remove('footer-home');
-                    footer.style.display = 'flex'; // Keep footer visible for progress indicator
-                }
-                if (progressIndicator && contactContainer && contactContainer.contains(progressIndicator)) {
-                    // Move progress indicator back to footer if it was in contact-container
-                    const footerLeft = footer.querySelector('.footer-left');
-                    if (footerLeft && !footerLeft.contains(progressIndicator)) {
-                        footerLeft.appendChild(progressIndicator);
-                    }
-                }
-                if (progressIndicator) {
-                    progressIndicator.style.position = 'static';
-                    progressIndicator.style.bottom = 'auto';
-                    progressIndicator.style.left = 'auto';
-                    progressIndicator.style.transform = 'none';
-                    progressIndicator.style.zIndex = 'auto';
+                    footer.style.display = 'flex';
                 }
             }
         }
@@ -987,6 +1018,324 @@
             const titleEl = modal.querySelector('.project-modal-title');
             const descEl = modal.querySelector('.project-modal-desc');
             const tagsEl = modal.querySelector('.project-modal-tags');
+            const detailsEl = document.getElementById('projectModalDetails');
+            const githubContainer = document.getElementById('projectModalGithub');
+
+            // Detailed content for Advanced RAG Pipeline
+            const ragPipelineDetails = `
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Overview</h4>
+                    <p class="project-modal-section-text">Built an end-to-end Graph-RAG knowledge engine combining graph search + vector search for highly accurate retrieval. Processes PDF documents, extracts entities & relationships, and enables explainable, context-rich responses.</p>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Core Features</h4>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">PDF Parsing & Information Extraction</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Extracts text, entities, and semantic relationships from PDFs.</li>
+                            <li>Converts raw text into structured knowledge units.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Neo4j Graph Database</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Stores entities as nodes and relationships as edges.</li>
+                            <li>Enables graph traversal queries and context expansion.</li>
+                            <li>Provides explainable reasoning by visualizing connections.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">ChromaDB Vector Store</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Generates embeddings using OpenAI models.</li>
+                            <li>Stores chunk embeddings for high-speed similarity search.</li>
+                            <li>Supports reranking & hybrid retrieval.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Hybrid Retrieval System</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Combines vector search + graph search.</li>
+                            <li>Merges results using scoring logic and removes duplicates.</li>
+                            <li>Improves precision and reduces hallucinations.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">FastAPI Backend</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Exposes endpoints for querying documents, graph, and RAG responses.</li>
+                            <li>Supports multiple LLM providers.</li>
+                            <li>Includes caching, validation, and error-handling layers.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Intelligent Fallback Mechanisms</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Switches between vector, graph, or generic LLM fallback.</li>
+                            <li>Ensures reliability even when retrieval is incomplete.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Highlights</h4>
+                    <ul class="project-modal-highlights">
+                        <li>Achieved high-accuracy retrieval using hybrid search.</li>
+                        <li>Enabled explainable AI through graph-based reasoning.</li>
+                        <li>Fully scalable backend suitable for production deployment.</li>
+                        <li>Demonstrates expertise in RAG + Graph DBs + LLM orchestration.</li>
+                    </ul>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Images</h4>
+                    <div class="project-modal-images">
+                        <div class="project-modal-image-item">
+                            <img src="1.jpeg" alt="Dashboard" class="project-modal-image">
+                            <p class="project-modal-image-caption">Dashboard</p>
+                        </div>
+                        <div class="project-modal-image-item">
+                            <img src="2.jpeg" alt="PDF Upload" class="project-modal-image">
+                            <p class="project-modal-image-caption">Uploaded the PDF successfully; the system processed the file into chunks and extracted metadata.</p>
+                        </div>
+                        <div class="project-modal-image-item">
+                            <img src="3.jpeg" alt="Hybrid Retrieval Query" class="project-modal-image">
+                            <p class="project-modal-image-caption">Submitted a hybrid retrieval query combining vector search; no graph search enabled in this request.</p>
+                        </div>
+                        <div class="project-modal-image-item">
+                            <img src="4.jpeg" alt="LLM Answer" class="project-modal-image">
+                            <p class="project-modal-image-caption">Received an LLM-generated answer with referenced text chunks retrieved from the vector database.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Detailed content for Sentiment Classification (ML/DL)
+            const sentimentClassificationDetails = `
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Overview</h4>
+                    <p class="project-modal-section-text">Developed a binary sentiment analysis system using both Machine Learning and Deep Learning techniques. Evaluated multiple models using TF-IDF and Word2Vec features to classify text as positive or negative.</p>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Core Features</h4>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Text Preprocessing</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Cleaned and normalized raw text (stopword removal, tokenization, lemmatization).</li>
+                            <li>Converted sentences into numerical features using:</li>
+                            <li>TF-IDF (classical NLP)</li>
+                            <li>Word2Vec embeddings (distributed representation)</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Machine Learning Models</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Implemented and compared several ML algorithms:</li>
+                            <li>Support Vector Machine (SVM)</li>
+                            <li>Logistic Regression</li>
+                            <li>Naive Bayes</li>
+                            <li>Random Forest</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Deep Learning Models</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Experimented with recurrent networks for sequence modeling:</li>
+                            <li>RNN</li>
+                            <li>LSTM</li>
+                            <li>GRU</li>
+                            <li>Used TensorFlow/Keras to train models on embedded text sequences for improved contextual understanding.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Model Evaluation</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Compared ML vs DL performance across accuracy, precision, recall, and F1-score.</li>
+                            <li>Visualized metrics using plots (confusion matrix, training curves).</li>
+                            <li>Identified SVM + TF-IDF as best-performing for this dataset.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Result</h4>
+                    <p class="project-modal-section-text">Highest accuracy 85.38% using SVM + TF-IDF</p>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Highlights</h4>
+                    <ul class="project-modal-highlights">
+                        <li>Built a reusable, scalable NLP pipeline.</li>
+                        <li>Demonstrated strengths/weaknesses of classic ML vs deep learning models.</li>
+                        <li>Achieved a strong 85.38% classification accuracy with lightweight SVM architecture.</li>
+                    </ul>
+                </div>
+            `;
+
+            // Detailed content for Sarcasm Detection (DL/ML)
+            const sarcasmDetectionDetails = `
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Overview</h4>
+                    <p class="project-modal-section-text">Built an end-to-end transformer-based sarcasm classification system using modern NLP pipelines. Designed to identify sarcastic intent in textual data with high accuracy using deep contextual embeddings.</p>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Core Features</h4>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Data Preprocessing & Text Cleaning</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Removed noise, stopwords, and punctuation.</li>
+                            <li>Performed tokenization, lemmatization, and normalization.</li>
+                            <li>Balanced sarcastic vs. non-sarcastic samples for training stability.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Transformer-based Model Architecture</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Utilized pre-trained models like BERT / RoBERTa from HuggingFace.</li>
+                            <li>Fine-tuned transformer layers for sarcasm-specific contextual understanding.</li>
+                            <li>Leveraged self-attention for better handling of tone, cues, and subtle contradictions.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Deep Embedding Feature Extraction</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Used contextual embeddings instead of classical TF-IDF.</li>
+                            <li>Improved semantic understanding of nuanced language.</li>
+                            <li>Enabled detection of irony, exaggeration, and implicit sentiment shifts.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Classification Pipeline</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Added fully connected layers for binary classification.</li>
+                            <li>Applied softmax and cross-entropy loss optimization.</li>
+                            <li>Used learning rate schedulers and early stopping for better generalization.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Model Evaluation</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Achieved ~91% accuracy on benchmark sarcasm datasets.</li>
+                            <li>Measured performance using F1-score, confusion matrix, and precision/recall.</li>
+                            <li>Validated model robustness on multiple test sets.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Highlights</h4>
+                    <ul class="project-modal-highlights">
+                        <li>Successfully captured subtle sarcastic patterns using transformer attention mechanisms.</li>
+                        <li>Built a reusable NLP pipeline compatible with other sentiment or intent detection tasks.</li>
+                        <li>Significantly outperformed classical ML models like SVM and LSTM-based baselines.</li>
+                    </ul>
+                </div>
+            `;
+
+            // GitHub link HTML for ERP System
+            const erpGithubLink = `
+                <a href="https://github.com/gitpr4596/ERP-Portal" target="_blank" rel="noopener noreferrer" class="project-modal-github-link">
+                    <svg class="project-modal-github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>View on GitHub</span>
+                </a>
+            `;
+
+            // GitHub link HTML for Sarcasm Detection
+            const sarcasmGithubLink = `
+                <a href="https://github.com/gitpr4596/Sarcasm-Detection" target="_blank" rel="noopener noreferrer" class="project-modal-github-link">
+                    <svg class="project-modal-github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>View on GitHub</span>
+                </a>
+            `;
+
+            // Detailed content for ERP System
+            const erpSystemDetails = `
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Overview</h4>
+                    <p class="project-modal-section-text">Developed a full-stack Enterprise Resource Planning (ERP) web application using Flask & Firebase. Centralized platform for managing employees, projects, approvals, communication, and analytics. Built with multi-role authentication, workflow automation, reporting, and real-time notifications.</p>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Core Features</h4>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">User & Role Management</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Multi-role login system: Managing Director, Team Lead, HR, Accounts, Employee.</li>
+                            <li>Secure authentication with hashed passwords.</li>
+                            <li>Role-based access control + individual dashboards.</li>
+                            <li>User profile management with document uploads.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Request & Workflow Automation</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Permission requests with multi-level approvals.</li>
+                            <li>Leave request system with TL + Director approval.</li>
+                            <li>Travel requests with budget tracking.</li>
+                            <li>Conveyance/transport reimbursement workflow.</li>
+                            <li>Asset request + tracking system.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Project & Task Management</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Create, assign, and track projects and tasks.</li>
+                            <li>Team creation and member assignments.</li>
+                            <li>Personal project tracking for employees.</li>
+                            <li>Group workspace for project-level collaboration.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Communication & Notifications</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Organization-wide / department-specific announcements.</li>
+                            <li>Real-time notifications for approvals & tasks.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Reporting & Analytics</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Attendance system integrated with Google Drive.</li>
+                            <li>Employee performance evaluation module.</li>
+                            <li>Auto-generated PDF reports using ReportLab/WeasyPrint.</li>
+                            <li>Role-specific dashboards with analytics widgets.</li>
+                        </ul>
+                    </div>
+                    <div class="project-modal-feature">
+                        <h5 class="project-modal-feature-title">Additional Modules</h5>
+                        <ul class="project-modal-feature-list">
+                            <li>Vendor management system.</li>
+                            <li>Secure file upload handling.</li>
+                            <li>Database migration support.</li>
+                            <li>Multi-dashboard UI for different user roles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Highlights</h4>
+                    <ul class="project-modal-highlights">
+                        <li>Automated approval workflows across multiple departments.</li>
+                        <li>Centralized dashboards allowing real-time employee & project visibility.</li>
+                        <li>Secure production deployment using Passenger WSGI.</li>
+                        <li>Designed a scalable ERP suitable for small & mid-sized organizations.</li>
+                    </ul>
+                </div>
+                <div class="project-modal-section">
+                    <h4 class="project-modal-section-title">Project Images</h4>
+                    <div class="project-modal-images">
+                        <div class="project-modal-image-item">
+                            <img src="login.jpeg" alt="ERP Login" class="project-modal-image">
+                            <p class="project-modal-image-caption">Login</p>
+                        </div>
+                        <div class="project-modal-image-item">
+                            <img src="dashboard.jpeg" alt="ERP Dashboard" class="project-modal-image">
+                            <p class="project-modal-image-caption">Dashboard</p>
+                        </div>
+                        <div class="project-modal-image-item">
+                            <img src="attendance module.jpeg" alt="ERP Attendance Module" class="project-modal-image">
+                            <p class="project-modal-image-caption">Attendance Module</p>
+                        </div>
+                    </div>
+                </div>
+            `;
 
             // open
             document.querySelectorAll('.project-card[data-project]').forEach(card => {
@@ -996,7 +1345,8 @@
                     const d = this.querySelector('.project-desc');
                     const tags = Array.from(this.querySelectorAll('.tag')).map(el => el.textContent.trim());
 
-                    titleEl.textContent = t ? t.textContent : 'Project';
+                    const title = t ? t.textContent : 'Project';
+                    titleEl.textContent = title;
                     descEl.textContent = d ? d.textContent : '';
 
                     tagsEl.innerHTML = '';
@@ -1006,6 +1356,40 @@
                         s.textContent = txt;
                         tagsEl.appendChild(s);
                     });
+
+                    // Show GitHub link for projects
+                    if (githubContainer) {
+                        if (title === 'ERP System') {
+                            githubContainer.innerHTML = erpGithubLink;
+                            githubContainer.style.display = 'block';
+                        } else if (title === 'Sarcasm Detection (DL/ML)') {
+                            githubContainer.innerHTML = sarcasmGithubLink;
+                            githubContainer.style.display = 'block';
+                        } else {
+                            githubContainer.innerHTML = '';
+                            githubContainer.style.display = 'none';
+                        }
+                    }
+
+                    // Show detailed content for specific projects
+                    if (detailsEl) {
+                        if (title === 'Advanced RAG Pipeline') {
+                            detailsEl.innerHTML = ragPipelineDetails;
+                            detailsEl.style.display = 'block';
+                        } else if (title === 'Sarcasm Detection (DL/ML)') {
+                            detailsEl.innerHTML = sarcasmDetectionDetails;
+                            detailsEl.style.display = 'block';
+                        } else if (title === 'Sentiment Classification (ML/DL)') {
+                            detailsEl.innerHTML = sentimentClassificationDetails;
+                            detailsEl.style.display = 'block';
+                        } else if (title === 'ERP System') {
+                            detailsEl.innerHTML = erpSystemDetails;
+                            detailsEl.style.display = 'block';
+                        } else {
+                            detailsEl.innerHTML = '';
+                            detailsEl.style.display = 'none';
+                        }
+                    }
 
                     modal.classList.add('open');
                     modal.setAttribute('aria-hidden', 'false');
@@ -1023,6 +1407,55 @@
                 if (ev.key === 'Escape' && modal.classList.contains('open')) {
                     modal.classList.remove('open');
                     modal.setAttribute('aria-hidden', 'true');
+                }
+            });
+        })();
+
+        // Image Lightbox
+        (function() {
+            const lightbox = document.getElementById('imageLightbox');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            
+            if (!lightbox || !lightboxImg) return;
+
+            // Open lightbox when clicking on project modal images
+            document.addEventListener('click', function(ev) {
+                const img = ev.target.closest('.project-modal-image');
+                if (img && img.tagName === 'IMG') {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+                    
+                    const src = img.getAttribute('src');
+                    const alt = img.getAttribute('alt');
+                    const caption = img.closest('.project-modal-image-item')?.querySelector('.project-modal-image-caption')?.textContent || alt;
+                    
+                    lightboxImg.src = src;
+                    lightboxImg.alt = alt;
+                    lightboxCaption.textContent = caption;
+                    
+                    lightbox.classList.add('open');
+                    lightbox.setAttribute('aria-hidden', 'false');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+
+            // Close lightbox
+            function closeLightbox() {
+                lightbox.classList.remove('open');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+
+            lightbox.addEventListener('click', function(ev) {
+                if (ev.target.hasAttribute('data-close-lightbox') || ev.target.classList.contains('image-lightbox-backdrop')) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', function(ev) {
+                if (ev.key === 'Escape' && lightbox.classList.contains('open')) {
+                    closeLightbox();
                 }
             });
         })();
@@ -1946,6 +2379,48 @@
             
             // Start animation
             requestAnimationFrame(updateLoadingProgress);
+        })();
+
+        // PDF Certificate Modal
+        (function() {
+            const pdfModal = document.getElementById('pdfModal');
+            const pdfFrame = document.getElementById('pdfFrame');
+            const pdfButtons = document.querySelectorAll('.certification-link[data-pdf]');
+            const closeButtons = pdfModal.querySelectorAll('[data-close]');
+
+            // Open PDF modal
+            pdfButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const pdfPath = this.getAttribute('data-pdf');
+                    pdfFrame.src = pdfPath;
+                    pdfModal.setAttribute('aria-hidden', 'false');
+                    pdfModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Close PDF modal
+            function closePdfModal() {
+                pdfModal.setAttribute('aria-hidden', 'true');
+                pdfModal.style.display = 'none';
+                document.body.style.overflow = '';
+                pdfFrame.src = '';
+            }
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', closePdfModal);
+            });
+
+            // Close on backdrop click
+            pdfModal.querySelector('.pdf-modal-backdrop').addEventListener('click', closePdfModal);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && pdfModal.getAttribute('aria-hidden') === 'false') {
+                    closePdfModal();
+                }
+            });
         })();
     </script>
 </body>
